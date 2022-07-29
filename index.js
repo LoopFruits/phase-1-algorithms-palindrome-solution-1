@@ -1,8 +1,14 @@
 function reverse(word){
+  //create and array from the input string
   const wordArray = word.split("")
+  //reverse the array
   const reversedWordArray = wordArray.reverse()
+  //create a string from the reversed array
   const reversedWord = reversedWordArray.join("")
+  //return the reversed string
   return reversedWord
+  //method chainning, can be replaces with what we have above
+  //return word.split("").reverse().join("");
 }
 
 
@@ -10,11 +16,12 @@ function isPalindrome(word) {
   // Write your algorithm here
 
   const reversedWord = reverse(word);
-
+  //clean version
+  // return word === reversedWord;
     if (word === reversedWord) {
       return true;
     } else {
-      return false
+      return false;
     }
 }
 /* 
